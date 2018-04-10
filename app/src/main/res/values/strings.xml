@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">mriVoice</string>
     <string name="msg_header">ご注文の定食: </string>
+    <string name="ageText">・・・</string>
+    <string name="genderText">・・・</string>
+    <string name="titleText">・・・</string>
+    <string name="createText">登録日：</string>
+    <string name="deadLineText">期限　：</string>
+    <string name="createdDateText">・・・</string>
+    <string name="deadLineDateText">・・・</string>
 </resources>

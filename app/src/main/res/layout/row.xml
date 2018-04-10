@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -10,31 +9,97 @@
         android:layout_height="match_parent"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginStart="10dp">
 
         <TextView
             android:id="@+id/ageLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="子供"
-            android:textSize="14sp" />
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="0.2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/ageText"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_rounded_corners_10dp"
+            android:textSize="12sp" />
 
         <TextView
             android:id="@+id/genderLabel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="男性"
-            android:textSize="14sp" />
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/genderText"
+            android:textColor="@android:color/white"
+            android:background="@drawable/shape_rounded_corners_10dp_g"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/titleLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
         android:layout_marginLeft="10dp"
-        android:text="子供の会話"
-        android:textStyle="bold" />
+        android:layout_marginTop="3dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="@string/titleText"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/createText"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/createdLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/createdDateText"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deadLineText"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/deadLineLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/deadLineDateText"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
 </LinearLayout>

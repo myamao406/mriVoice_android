@@ -3,4 +3,20 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="titleBlueColor">#15406f</color>
+    <color name="blueColor">#007AFF</color>
+    <color name="greenColor">#8BAD00</color>
+    <color name="bargainsYellowColor">#FFAA00</color>
+    <color name="orangeColor">#FF7F00</color>
+    <color name="redColor">#EF6074</color>
+    <color name="noticeRedColor">#E5303D</color>
+    <color name="lightBrownColor">#CCA17F</color>
+    <color name="blackColor">#484432</color>
+    <color name="darkGrayColor">#7B7769</color>
+    <color name="grayColor">#A3A090</color>
+    <color name="borderColor">#dbdbce</color>
+    <color name="pink">#FFA1B0</color>
+    <color name="sakura">#FDD9D9</color>
+    <color name="kana_back">#B2B2B2</color>
+    <color name="Group_Table_View_BackGroundColor">#ebebf1</color>
 </resources>

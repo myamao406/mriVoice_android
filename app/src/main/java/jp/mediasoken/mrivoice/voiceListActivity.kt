@@ -1,7 +1,8 @@
 package jp.mediasoken.mrivoice
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.DividerItemDecoration
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
@@ -10,8 +11,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
-import java.util.ArrayList
-import java.util.HashMap
+import java.util.*
 
 class voiceListActivity : AppCompatActivity() {
 
@@ -38,6 +38,12 @@ class voiceListActivity : AppCompatActivity() {
         voiceListView.addItemDecoration(decorator)
     }
 
+    private class Constants {
+        companion object {
+            val ageLabel = arrayOf("だれでも","子供","大人","老人")
+            val genderLabel = arrayOf("どちらでも","男性","女性")
+        }
+    }
     /**
      * リストビューに表示させる読み上げリストデータを生成するメソッド。
      *
@@ -45,8 +51,7 @@ class voiceListActivity : AppCompatActivity() {
      */
     private fun createVoiceList():List<Map<String,Any>> {
         val voiceList = ArrayList<Map<String, Any>>()
-
-        val voice:MutableMap<String,Any> = HashMap()
+        var voice:MutableMap<String,Any> = HashMap()
 
         voice["vID"] = 1
         voice["title"] = "坊っちゃん"
@@ -58,6 +63,7 @@ class voiceListActivity : AppCompatActivity() {
         voice["contents"] =  "親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）"
         voiceList.add(voice)
 
+        voice = HashMap()
         voice["vID"] = 2
         voice["title"] = "徒然草"
         voice["Age"] = 1
@@ -68,6 +74,7 @@ class voiceListActivity : AppCompatActivity() {
         voice["contents"] =  "つれづれなるまゝに、日暮らし、硯にむかひて、心にうつりゆくよしなし事を、そこはかとなく書きつくれば、あやしうこそものぐるほしけれ。（Wikipediaより）"
         voiceList.add(voice)
 
+        voice = HashMap()
         voice["vID"] = 3
         voice["title"] = "爆発音がした"
         voice["Age"] = 1
@@ -78,6 +85,7 @@ class voiceListActivity : AppCompatActivity() {
         voice["contents"] =  "後ろで大きな爆発音がした。俺は驚いて振り返った。"
         voiceList.add(voice)
 
+        voice = HashMap()
         voice["vID"] = 4
         voice["title"] = "英語"
         voice["Age"] = 2
@@ -88,6 +96,7 @@ class voiceListActivity : AppCompatActivity() {
         voice["contents"] = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         voiceList.add(voice)
 
+        voice = HashMap()
         voice["vID"] = 5
         voice["title"] = "おとな２"
         voice["Age"] = 2
@@ -98,6 +107,7 @@ class voiceListActivity : AppCompatActivity() {
         voice["contents"] = "カタカナ語が苦手な方は「組見本」と呼ぶとよいでしょう。主に書籍やウェブページなどのデザインを作成する時によく使われます。カタカナ語が苦手な方は「組見本」と呼ぶとよいでしょう。主に書籍やウェブページなどのデザインを作成する時によく使われます。書体やレイアウトなどを確認するために用います。この組見本は自由に複製したり頒布することができます。"
         voiceList.add(voice)
 
+        voice = HashMap()
         voice["vID"] = 6
         voice["title"] = "おとな３"
         voice["Age"] = 2
@@ -108,6 +118,7 @@ class voiceListActivity : AppCompatActivity() {
         voice["contents"] = "これは正式な文章の代わりに入れて使うダミーテキストです。この組見本は自由に複製したり頒布することができます。カタカナ語が苦手な方は「組見本」と呼ぶとよいでしょう。なお、組見本の「組」とは文字組のことです。活字印刷時代の用語だったと思います。書体やレイアウトなどを確認するために用います。ダミーテキストはダミー文書やダミー文章とも呼ばれることがあります。"
         voiceList.add(voice)
 
+        voice = HashMap()
         voice["vID"] = 7
         voice["title"] = "ながい題名６７８９０１２３４５６７８９０"
         voice["Age"] = 0
@@ -118,6 +129,7 @@ class voiceListActivity : AppCompatActivity() {
         voice["contents"] = "書体やレイアウトなどを確認するために用います。主に書籍やウェブページなどのデザインを作成する時によく使われます。文章に特に深い意味はありません。主に書籍やウェブページなどのデザインを作成する時によく使われます。書体やレイアウトなどを確認するために用います。この組見本は自由に複製したり頒布することができます。"
         voiceList.add(voice)
 
+        voice = HashMap()
         voice["vID"] = 8
         voice["title"] = "英語大文字"
         voice["Age"] = 3
@@ -128,6 +140,7 @@ class voiceListActivity : AppCompatActivity() {
         voice["contents"] = "LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCITATION ULLAMCO LABORIS NISI UT ALIQUIP EX EA COMMODO CONSEQUAT. DUIS AUTE IRURE DOLOR IN REPREHENDERIT IN VOLUPTATE VELIT ESSE CILLUM DOLORE EU FUGIAT NULLA PARIATUR. EXCEPTEUR SINT OCCAECAT CUPIDATAT NON PROIDENT, SUNT IN CULPA QUI OFFICIA DESERUNT MOLLIT ANIM ID EST LABORUM."
         voiceList.add(voice)
 
+        voice = HashMap()
         voice["vID"] = 9
         voice["title"] = "老人１"
         voice["Age"] = 3
@@ -138,6 +151,7 @@ class voiceListActivity : AppCompatActivity() {
         voice["contents"] = "彼は背後にひそかな足音を聞いた。それはあまり良い意味を示すものではない。誰がこんな夜更けに、しかもこんな街灯のお粗末な港街の狭い小道で彼をつけて来るというのだ。人生の航路を捻じ曲げ、その獲物と共に立ち去ろうとしている、その丁度今。 彼のこの仕事への恐れを和らげるために、数多い仲間の中に同じ考えを抱き、彼を見守り、待っている者がいるというのか。それとも背後の足音の主は、この街に無数にいる法監視役で、強靭な罰をすぐにも彼の手首にガシャンと下すというのか。彼は足音が止まったことに気が着いた。あわてて辺りを見回す。ふと狭い抜け道に目が止まる。 彼は素早く右に身を翻し、建物の間に消え去った。その時彼は、もう少しで道の真中に転がっていたごみバケツに躓き転ぶところだった。 彼は暗闇の中で道を確かめようとじっと見つめた。どうやら自分の通ってきた道以外にこの中庭からの出道はないようだ。 足音はだんだん近づき、彼には角を曲がる黒い人影が見えた。彼の目は夜の闇の中を必死にさまよい、逃げ道を探す。もうすべては終わりなのか。すべての苦労と準備は水の泡だというのか。 突然、彼の横で扉が風に揺らぎ、ほんのわずかにきしむのを聞いた時、彼は背中を壁に押し付け、追跡者に見付けられないことを願った。この扉は望みの綱として投げかけられた、彼のジレンマからの出口なのだろうか。背中を壁にぴったり押し付けたまま、ゆっくりと彼は開いている扉の方へと身を動かして行った。この扉は彼の救いとなるのだろうか。"
         voiceList.add(voice)
 
+        voice = HashMap()
         voice["vID"] = 10
         voice["title"] = "Wordの使い方"
         voice["Age"] = 3
@@ -154,17 +168,11 @@ class voiceListActivity : AppCompatActivity() {
     private inner class RecyclerListViewHolder
 
     (itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var _tvTitle: TextView
-        var _tvAge: TextView
-        var _tvGender: TextView
-
-        init {
-            //引数で渡されたリスト1行分の画面部品中から表示に使われるTextViewを取得。
-            _tvTitle = itemView.findViewById(R.id.titleLabel)
-            _tvAge = itemView.findViewById(R.id.ageLabel)
-            _tvGender = itemView.findViewById(R.id.genderLabel)
-
-        }//親クラスのコンストラクタの呼び出し。
+        var _tvTitle: TextView = itemView.findViewById(R.id.titleLabel)
+        var _tvAge: TextView = itemView.findViewById(R.id.ageLabel)
+        var _tvGender: TextView = itemView.findViewById(R.id.genderLabel)
+        var _tvCreated: TextView = itemView.findViewById(R.id.createdLabel)
+        var _tvDeadLine: TextView = itemView.findViewById(R.id.deadLineLabel)
     }
 
     /**
@@ -189,20 +197,17 @@ class voiceListActivity : AppCompatActivity() {
         override fun onBindViewHolder(holder: RecyclerListViewHolder, position: Int) {
             //リストデータから該当1行分のデータを取得。
             val item = _listData[position]
-            //メニュー名文字列を取得。
             val titleName = item["title"] as String
-            //メニュー金額を取得。
-            val age = item["Age"] as Int
-            //表示用に金額を文字列に変換。
-            val ageStr = age.toString()
-            //メニュー金額を取得。
-            val gender = item["Gender"] as Int
-            //表示用に金額を文字列に変換。
-            val genderStr = gender.toString()
-            //メニュー名と金額をビューホルダ中のTextViewに設定。
+            val ageStr = Constants.ageLabel[item["Age"] as Int]
+            val genderStr = Constants.genderLabel[item["Gender"] as Int]
+            val created = item["Created"] as String
+            val deadLine = item["Deadline"] as String
+
             holder._tvTitle.text = titleName
             holder._tvAge.text = ageStr
             holder._tvGender.text = genderStr
+            holder._tvCreated.text = created
+            holder._tvDeadLine.text = deadLine
 
         }
 
@@ -230,6 +235,11 @@ class voiceListActivity : AppCompatActivity() {
                     msg,
                     Toast.LENGTH_SHORT
             ).show()
+
+            //インテントオブジェクトを用意。
+            val intent = Intent(this@voiceListActivity, VoiceRecPreparationActivity::class.java)
+            //アクティビティを起動。
+            startActivity(intent)
         }
     }
 }
