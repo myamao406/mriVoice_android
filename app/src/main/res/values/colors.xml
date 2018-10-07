@@ -2,11 +2,11 @@
 <resources>
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#ff4081</color>
     <color name="titleBlueColor">#15406f</color>
     <color name="blueColor">#007AFF</color>
     <color name="greenColor">#8BAD00</color>
-    <color name="bargainsYellowColor">#FFAA00</color>
+    <color name="bargainsYellowColor">#ffaa00</color>
     <color name="orangeColor">#FF7F00</color>
     <color name="redColor">#EF6074</color>
     <color name="noticeRedColor">#E5303D</color>
@@ -17,6 +17,7 @@
     <color name="borderColor">#dbdbce</color>
     <color name="pink">#FFA1B0</color>
     <color name="sakura">#FDD9D9</color>
-    <color name="kana_back">#B2B2B2</color>
+    <color name="kana_back">#b2b2b2</color>
     <color name="Group_Table_View_BackGroundColor">#ebebf1</color>
+    <color name="colorDrawerHeader">#CDDC39</color>
 </resources>

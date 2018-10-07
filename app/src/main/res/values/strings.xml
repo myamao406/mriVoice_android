@@ -1,11 +1,51 @@
 <resources>
     <string name="app_name">mriVoice</string>
     <string name="msg_header">ご注文の定食: </string>
-    <string name="ageText">・・・</string>
-    <string name="genderText">・・・</string>
-    <string name="titleText">・・・</string>
+    <string name="blankText">XXX</string>
     <string name="createText">登録日：</string>
     <string name="deadLineText">期限　：</string>
-    <string name="createdDateText">・・・</string>
-    <string name="deadLineDateText">・・・</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="logon">ログオン</string>
+    <string name="e_mail">メールアドレス</string>
+    <string name="password">パスワード</string>
+    <string name="err">エラー</string>
+    <string name="login_err_msg">メールアドレスもしくはパスワードが\n間違っています。</string>
+    <string name="textSizeChangeButtonText">AAA</string>
+    <string name="recordStartButtonText">録音</string>
+    <string name="recordStopButtonText">停止</string>
+    <string name="recTimeText">00:00:00</string>
+    <string name="reDoButton">やり直し</string>
+    <string name="okButton">OK</string>
+    <string name="timeZero">00:00</string>
+    <string name="youre_doing_it_wrong">You\'re doing it wrong</string>
+    <string name="config">設定</string>
+    <string name="appVersion">バージョン</string>
+    <string name="signOut">ログアウト</string>
+    <string name="is_recording_disp">録音済表示</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">Contacts permissions are needed for providing email completions.</string>
+    <string name="title">Title</string>
+
+    <string name="server_base_url">https://www.mediasoken.net/oc/</string>
+    <string name="username">med1gf15297</string>
+    <string name="ownPassword">9210419</string>
+    <string name="upload_folder_path">Documents</string>
+    <string name="file_mimetype">audio/wav</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_voice_list_drawer">voiceListDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="title_activity_voice_list">VoiceListActivity</string>
 </resources>

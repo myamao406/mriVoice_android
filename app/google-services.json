@@ -1,0 +1,74 @@
+{
+  "project_info": {
+    "project_number": "715577608341",
+    "firebase_url": "https://mrivoice-8501f.firebaseio.com",
+    "project_id": "mrivoice-8501f",
+    "storage_bucket": "mrivoice-8501f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715577608341:android:37f39e69dae8f334",
+        "android_client_info": {
+          "package_name": "jp.mediasoken.mrivoice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715577608341-krckghio1m69emf8d5qn226i6q83t6u3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jp.mediasoken.mrivoice",
+            "certificate_hash": "eefad80367049f7fef007e6e8766ef08bf67a9bc"
+          }
+        },
+        {
+          "client_id": "715577608341-up7io8lbi2i7a1l46epb2mmo9ph2mmec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jp.mediasoken.mrivoice",
+            "certificate_hash": "80867c14981dbe7823c7da3cec7c83168eacc4d1"
+          }
+        },
+        {
+          "client_id": "715577608341-jd3tdrbjub9tk6g1kmic0nencn1eqm37.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "715577608341-jd3tdrbjub9tk6g1kmic0nencn1eqm37.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu3k8cSveI-kRLfuhjjxqmBy-kwF7Zzf0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715577608341-jd3tdrbjub9tk6g1kmic0nencn1eqm37.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "715577608341-adomrokfl2dear8b9i0i83s75dp3naot.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "jp.mediasoken.mrivoice"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
