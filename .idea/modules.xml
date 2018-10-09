@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mriVoice_android.iml" filepath="$PROJECT_DIR$/mriVoice_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mrivoice_android.iml" filepath="$PROJECT_DIR$/mrivoice_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ownCloud_library/ownCloud_library.iml" filepath="$PROJECT_DIR$/ownCloud_library/ownCloud_library.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.trading212:sticky-headers-0.1.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sticky-headers-0.1.4.aar/75db47518991a8f884cc6d97ae89fc1f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sticky-headers-0.1.4.aar/75db47518991a8f884cc6d97ae89fc1f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.trading212/sticky-headers/0.1.4/a8362191c6484d62293d8d7d8fa80f26c700294b/sticky-headers-0.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
